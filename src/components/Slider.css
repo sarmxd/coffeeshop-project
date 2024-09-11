@@ -1,0 +1,90 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.next-slide {
+    opacity: 0;
+}
+
+.slider-container .slide-wrapper .slide.next-slide {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.prev-button,
+.next-button {
+    background-color: #6F4E37;
+    color: #EADDCA;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #5C3F2E;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-button {
+    left: 1rem;
+}
+
+.next-button {
+    right: 1rem;
+}
+
+.caption {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    color: #EADDCA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.caption h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.caption p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
