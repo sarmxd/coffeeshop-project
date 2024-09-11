@@ -23,7 +23,7 @@ body {
   }
   
   .nav-link, .click-me-button, .other-button {
-    background-color: blue;
+    background-color: #6F4E37;
     color: #EADDCA;
     padding: 0.5rem 1rem;
     border: none;
